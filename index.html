@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BESAFE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-black font-[Ubuntu,sans-serif]">
+    <header class="fixed top-0 left-0 w-full bg-black shadow-md z-50 p-4">
+  <div class="max-w-[1200px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+    <div class="text-white font-bold text-xl sm:text-2xl">B E S A F E</div>
+
+    <nav class="flex flex-wrap justify-center gap-2 sm:gap-4 sm:pr-5">
+      <a href="#main" class="inline-flex items-center px-3 py-1.5 text-xs sm:text-sm text-white border border-white rounded-xl hover:bg-gray-600 transition">
+        Головна
+      </a>
+      <a href="#about" class="inline-flex items-center px-3 py-1.5 text-xs sm:text-sm text-white border border-white rounded-xl hover:bg-gray-600 transition">
+        Про нас
+      </a>
+      <a href="#cars" class="inline-flex items-center px-3 py-1.5 text-xs sm:text-sm text-white border border-white rounded-xl hover:bg-gray-600 transition">
+        Автопарк
+      </a>
+      <a href="#transfers" class="inline-flex items-center px-3 py-1.5 text-xs sm:text-sm text-white border border-white rounded-xl hover:bg-gray-600 transition">
+        Трансфери
+      </a>
+      <a href="#form" class="inline-flex items-center px-4 py-2 text-sm text-white border border-white rounded-xl hover:bg-green-800 transition">
+        Залишити заявку
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section id="main" class="relative min-h-screen bg-black bg-[url('img/land-cruiser.png')] bg-cover bg-center flex items-center justify-center text-white">
+  <div class="absolute inset-0 bg-black/80"></div>
+  <div class="relative max-w-3xl p-10 text-center rounded-2xl">
+    <h1 class="text-4xl md:text-5xl font-semibold">БРОНЬОВАНІ АВТОМОБІЛІ ТА СЕРВІС ПРЕМІУМ-КЛАСУ В ОРЕНДУ</h1>
+    <p class="mt-8 text-lg">Конфіденційні трансфери, охоронний супровід та сервісне обслуговування броньованих авто по Києву та Україні</p>
+    <a href="#form" class="inline-block mt-8 px-8 py-4 text-2xl border border-white rounded-2xl hover:bg-green-800 transition">Залишити заявку</a>
+  </div>
+</section>
+
+<section id="about" class="relative min-h-screen bg-black bg-[url('img/lexus570.png')] bg-cover bg-center flex items-center justify-center py-24 px-4">
+  <div class="absolute inset-0 bg-black/80"></div>
+  <div class="relative max-w-3xl text-white text-center">
+    <h1 class="text-3xl md:text-4xl font-semibold mb-6">
+      BESAFE — сервіс оренди та обслуговування сертифікованих
+      броньованих автомобілів з водієм. Ми працюємо з дипломатичними
+      представництвами, міжнародними делегаціями, охоронними компаніями
+      та клієнтами, що потребують найвищого рівня захисту та
+      конфіденційності.
+    </h1>
+    <p class="mb-4 text-lg">Окрім оренди, ми пропонуємо:</p>
+    <ul class="list-disc list-inside max-w-md mx-auto text-left space-y-2">
+      <li>Професійне технічне обслуговування сторонніх броньованих авто</li>
+      <li>Перевірку броні, скла, ходової частини</li>
+      <li>Сервісне консультування для водіїв та охорони</li>
+      <li>Подачу авто по Києву до 1 години</li>
+    </ul>
+  </div>
+</section>
+
+<section id="cars" class="relative bg-black bg-[url('img/vito.png')] bg-cover bg-center py-24 px-4 min-h-screen flex items-center justify-center">
+  <div class="absolute inset-0 bg-black/80"></div>
+  <div class="relative max-w-5xl w-full text-white text-center">
+    <p class="mb-8 text-lg max-w-xl mx-auto">Наш автопарк включає:</p>
+    <ul class="flex flex-wrap justify-center gap-8 list-none p-0 m-0">
+      <li class="bg-black/60 rounded-xl p-6 flex flex-col items-center w-full sm:w-[45%]">
+        <a href="#" class="flex flex-col items-center text-white no-underline hover:opacity-90 transition">
+          <img src="img/gls.png" alt="GL500" class="w-full max-w-[300px] h-48 object-cover rounded-lg mb-4" />
+          Mercedes-Benz GL500 — простір, престиж і захист
+        </a>
+      </li>
+      <li class="bg-black/60 rounded-xl p-6 flex flex-col items-center w-full sm:w-[45%]">
+        <a href="#" class="flex flex-col items-center text-white no-underline hover:opacity-90 transition">
+          <img src="img/221.png" alt="221" class="w-full max-w-[300px] h-48 object-cover rounded-lg mb-4" />
+          Mercedes-Benz S-Class W221 — ділова елегантність і тиша в салоні
+        </a>
+      </li>
+      <li class="bg-black/60 rounded-xl p-6 flex flex-col items-center w-full sm:w-[45%]">
+        <a href="#" class="flex flex-col items-center text-white no-underline hover:opacity-90 transition">
+          <img src="img/lx570.png" alt="lx570" class="w-full max-w-[300px] h-48 object-cover rounded-lg mb-4" />
+          Lexus LX570 — безпечна класика на складних маршрутах
+        </a>
+      </li>
+      <li class="bg-black/60 rounded-xl p-6 flex flex-col items-center w-full sm:w-[45%]">
+        <a href="#" class="flex flex-col items-center text-white no-underline hover:opacity-90 transition">
+          <img src="img/ToyotaLandCruiser.png" alt="Toyota_Land_Cruiser" class="w-full max-w-[300px] h-48 object-cover rounded-lg mb-4" />
+          Toyota Land Cruiser — техніка, якій довіряють професіонали
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="transfers" class="relative min-h-screen bg-black bg-[url('img/banan.png')] bg-cover bg-center flex items-center justify-center py-24 px-4">
+  <div class="absolute inset-0 bg-black/80"></div>
+  <div class="relative max-w-3xl text-white text-center">
+    <h1 class="text-3xl md:text-4xl font-semibold mb-6 uppercase">ПЕРСОНАЛЬНІ ТРАНСФЕРИ ДЛЯ VIP-КЛІЄНТІВ ТА ДЕЛЕГАЦІЙ</h1>
+    <p class="mb-4 text-lg">
+      Надаємо конфіденційні трансфери для дипломатичних установ, міжнародних делегацій, охоронних структур і приватних клієнтів. Ми гарантуємо оперативність, непомітність та технічну готовність у будь-якій ситуації.
+    </p>
+    <p class="mb-4 text-lg">Послуги трансферу:</p>
+    <ul class="list-disc list-inside max-w-md mx-auto text-left space-y-2 mb-8">
+      <li>Подача авто по Києву протягом 1 години</li>
+      <li>Поїздки по всій Україні</li>
+      <li>Супровід заходів, переміщення між аеропортами, готелями, об’єктами</li>
+      <li>Маршрути узгоджуються індивідуально</li>
+    </ul>
+    <a href="#form" class="inline-block px-8 py-4 text-2xl border border-white rounded-2xl hover:bg-green-800 transition">Залишити заявку</a>
+  </div>
+</section>
+
+<section id="form" class="relative min-h-screen bg-black bg-[url('img/223.png')] bg-cover bg-center flex items-center justify-center py-24 px-4">
+  <div class="absolute inset-0 bg-black/80"></div>
+  <div class="relative max-w-md w-full text-white text-center">
+    <h1 class="text-3xl md:text-4xl font-semibold mb-6 uppercase">
+      ЗАЛИШТЕ ЗАПИТ — МИ ЗВ’ЯЖЕМОСЯ З ВАМИ ПРОТЯГОМ 30 ХВИЛИН
+    </h1>
+    <form class="flex flex-col gap-4" novalidate>
+      <input type="text" placeholder="Ваше ім’я" required
+        class="p-3 rounded-lg border border-gray-600 bg-black text-white placeholder-gray-400 focus:outline-none focus:border-gray-400" />
+      <input type="tel" placeholder="Телефон" required
+        class="p-3 rounded-lg border border-gray-600 bg-black text-white placeholder-gray-400 focus:outline-none focus:border-gray-400" />
+      <textarea placeholder="Коментар"
+        class="p-3 rounded-lg border border-gray-600 bg-black text-white placeholder-gray-400 resize-none focus:outline-none focus:border-gray-400"></textarea>
+      <button type="submit"
+        class="p-3 bg-gray-600 rounded-lg text-white font-semibold hover:bg-green-800 transition">
+        Надіслати
+      </button>
+    </form>
+  </div>
+</section>
+
+<section id="map" class="w-full bg-black py-8">
+  <div class="max-w-[1200px] mx-auto px-4">
+    <h2 class="text-white text-2xl font-semibold mb-4 text-center">Знайди нас тут</h2>
+    <div class="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.692549051264!2d30.504390585314848!3d50.437875640227425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf01deefc825%3A0xacd489bb95cccf69!2z0KXRgNC10YnQsNGC0LjQug!5e0!3m2!1suk!2sua!4v1754597546389!5m2!1suk!2sua"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-full h-full"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-gray-400 border-t border-gray-800 py-5 mt-12 text-center text-sm">
+  <div class="max-w-[1200px] mx-auto px-5">
+    <p>&copy; 2025 BESAFE. Всі права захищені.</p>
+    <p>
+      Контакти:
+      <a href="mailto:besafe.ukraine@gmail.com" class="text-gray-500 hover:text-white transition">info@besafe.ua</a> |
+      Телефон: +38 0 (96) 039 67 70
+    </p>
+  </div>
+</footer>
+</body>
+</html>
