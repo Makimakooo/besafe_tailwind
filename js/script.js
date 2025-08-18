@@ -81,3 +81,40 @@ carouselInner.addEventListener('touchmove', (e) => {
 carouselInner.addEventListener('touchend', () => {
   isSwiping = false;
 });
+
+// тарифы по каждому авто
+
+const rates = {
+  GL500:   { day: 1000, hour: 150 },
+  W221:    { day: 900,  hour: 130 },
+  LX570:   { day: 1200, hour: 180 },
+  LC300:   { day: 1500, hour: 300 }
+};
+
+function openRentModal(car){!
+  document.getElementById('rentModal').classList.remove('hidden');
+  if(car) document.getElementById('carSelect').value = car;
+}
+
+function closeRentModal(){
+  document.getElementById('rentModal').classList.add('hidden');
+}
+
+function toggleDuration(){
+  const type = document.getElementById('rentType').value;
+  document.getElementById('durationInput').value = 1;
+  document.getElementById('durationInput').placeholder = 
+    type === 'day' ? "Днів" : "Годин";
+}
+
+function calculateRent(){
+  const car = document.getElementById('carSelect').value;   // выбранное авто
+  const type = document.getElementById('rentType').value;   // "day" или "hour"
+  const duration = +document.getElementById('durationInput').value || 1;
+
+  const rate = rates[car][type];  // ставка конкретного авто
+  const total = duration * rate;
+
+  document.getElementById('rentResult').innerHTML =
+    `Вартість оренди (${car}): <span class="text-green-600">$${total.toLocaleString()}</span>`;
+}
