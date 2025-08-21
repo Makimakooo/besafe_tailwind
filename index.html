@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Основные мета-теги -->
+    <title>BESAFE — Оренда броньованих авто та преміум-сервіс в Києві</title>
+    <meta
+      name="description"
+      content="BESAFE — оренда броньованих автомобілів з водієм, конфіденційні трансфери та сервісне обслуговування броньованих авто по Києву та Україні."
+    />
+    <meta
+      name="keywords"
+      content="оренда авто, броньовані автомобілі, трансфери Київ, преміум авто, безпека, BESAFE"
+    />
+    <meta name="author" content="BESAFE" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Facebook, Telegram, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="BESAFE — Оренда броньованих авто та преміум-сервіс в Києві"
+    />
+    <meta
+      property="og:description"
+      content="Конфіденційні трансфери та оренда броньованих автомобілів по Києву та Україні."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://besafe.ua/" />
+    <meta property="og:image" content="https://besafe.ua/img/preview.jpg" />
+    <meta property="og:locale" content="uk_UA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="BESAFE — Оренда броньованих авто та преміум-сервіс в Києві"
+    />
+    <meta
+      name="twitter:description"
+      content="Конфіденційні трансфери та оренда броньованих автомобілів по Києву та Україні."
+    />
+    <meta name="twitter:image" content="https://besafe.ua/img/preview.jpg" />
+    <meta name="twitter:site" content="@besafe_ukraine" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/stacks.png" />
+    <link rel="shortcut icon" href="ico/stacks.png" type="image/png" />
+
+    <!-- Стили и шрифты -->
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.css"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="16x16" href="ico/stacks.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -19,9 +64,11 @@
       <div
         class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-1"
       >
-        <a href="#main" class="flex flex-row items-center gap-2 transform hover:scale-105 hover:shadow-lg">
-
-          <img src="ico/stacks.svg" alt="logo" class="w-12 h-12">
+        <a
+          href="#main"
+          class="flex flex-row items-center gap-2 transform hover:scale-105 hover:shadow-lg"
+        >
+          <img src="ico/stacks.png" alt="logo" class="w-12 h-12" />
           <div
             class="text-white font-bold text-xl sm:text-2xl transition transform hover:scale-105 hover:shadow-lg"
           >
@@ -79,7 +126,7 @@
     <!-- main -->
     <section
       id="main"
-      class="relative min-h-screen bg-black bg-[url('img/land-cruiser.png')] bg-cover bg-center flex items-center justify-center text-white"
+      class="relative min-h-screen bg-black bg-[url('img/bg/land-cruiserbg.png')] bg-cover bg-center flex items-center justify-center text-white"
     >
       <div class="absolute inset-0 bg-black/80"></div>
       <div class="relative max-w-3xl p-10 text-center rounded-2xl">
@@ -101,7 +148,7 @@
     <!-- about -->
     <section
       id="about"
-      class="relative min-h-screen bg-black bg-[url('img/lexus570.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
+      class="relative min-h-screen bg-black bg-[url('img/bg/lexus570bg.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
     >
       <div class="absolute inset-0 bg-black/80"></div>
       <div class="relative max-w-3xl text-white text-center">
@@ -139,7 +186,7 @@
     <!-- autopark -->
     <section
       id="cars"
-      class="relative bg-black bg-[url('img/vito.png')] bg-cover bg-center py-24 px-4 min-h-screen flex items-center justify-center"
+      class="relative bg-black bg-[url('img/bg/vitobg.png')] bg-cover bg-center py-24 px-4 min-h-screen flex items-center justify-center"
     >
       <div class="absolute inset-0 bg-black/80"></div>
       <div class="relative max-w-5xl w-full text-white text-center">
@@ -150,11 +197,11 @@
           >
             <a
               href="#"
-              onclick="openModal(['./img/gl500_salon1.jpg', './img/gl500_salon2.jpg', './img/gl500_salon3.jpg']); return false;"
+              onclick="openModal(['./img/gl500/gl500_salon1.jpg', './img/gl500/gl500_salon2.jpg', './img/gl500/gl500_salon3.jpg']); return false;"
               class="text-white hover:text-gray-300 flex flex-col items-center hover:opacity-90 transition"
             >
               <img
-                src="img/gls.png"
+                src="img/autopark/gls.png"
                 alt="GL500"
                 class="w-full max-w-[300px] h-48 object-cover rounded-lg mb-4"
               />
@@ -172,11 +219,11 @@
           >
             <a
               href="#"
-              onclick="openModal(['./img/mersedes221salon1.jpg', './img/mersedes221salon2.jpg', './img/mersedes221salon3.jpg']); return false;"
+              onclick="openModal(['./img/221/mersedes221salon1.jpg', './img/221/mersedes221salon2.jpg', './img/221/mersedes221salon3.jpg']); return false;"
               class="text-white hover:text-gray-300 flex flex-col items-center hover:opacity-90 transition"
             >
               <img
-                src="img/221.png"
+                src="img/autopark/221.png"
                 alt="221"
                 class="w-full max-w-[300px] h-48 object-cover rounded-lg mb-4"
               />
@@ -194,11 +241,11 @@
           >
             <a
               href="#"
-              onclick="openModal(['./img/lx570salon1.jpg', './img/lx570salon2.jpg', './img/lx570salon3.jpg']); return false;"
+              onclick="openModal(['./img/lx570/lx570salon1.jpg', './img/lx570/lx570salon2.jpg', './img/lx570/lx570salon3.jpg']); return false;"
               class="flex flex-col items-center text-white no-underline hover:opacity-90 transition"
             >
               <img
-                src="img/lx570.png"
+                src="img/autopark/lx570.png"
                 alt="lx570"
                 class="w-full max-w-[300px] h-48 object-cover rounded-lg mb-4 hover:opacity-90 transition"
               />
@@ -216,11 +263,11 @@
           >
             <a
               href="#"
-              onclick="openModal(['./img/lc300salon1.jpg', './img/lc300salon2.jpg', './img/lc300salon3.jpg']); return false;"
+              onclick="openModal(['./img/lc300/lc300salon1.jpg', './img/lc300/lc300salon2.jpg', './img/lc300/lc300salon3.jpg']); return false;"
               class="text-white hover:text-gray-300 flex flex-col items-center hover:opacity-90 transition"
             >
               <img
-                src="img/ToyotaLandCruiser.png"
+                src="img/autopark/ToyotaLandCruiser.png"
                 alt="Toyota_Land_Cruiser"
                 class="w-full max-w-[400px] h-48 object-contain rounded-lg mb-4"
               />
@@ -240,7 +287,7 @@
     <!-- tranfers -->
     <section
       id="transfers"
-      class="relative min-h-screen bg-black bg-[url('img/banan.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
+      class="relative min-h-screen bg-black bg-[url('img/bg/bananbg.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
     >
       <div class="absolute inset-0 bg-black/80"></div>
       <div class="relative max-w-3xl text-white text-center">
@@ -285,7 +332,7 @@
     <!-- form/order -->
     <section
       id="form"
-      class="relative min-h-screen bg-black bg-[url('img/223.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
+      class="relative min-h-screen bg-black bg-[url('img/bg/223bg.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
     >
       <div class="absolute inset-0 bg-black/80"></div>
       <div class="relative max-w-md w-full text-white text-center">
