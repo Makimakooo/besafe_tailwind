@@ -17,9 +17,11 @@
   <body class="bg-black font-[Ubuntu,sans-serif]">
     <header class="fixed top-0 left-0 w-full bg-black shadow-md z-50 p-4">
       <div
-        class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0"
+        class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-1"
       >
-        <a href="#main">
+        <a href="#main" class="flex flex-row items-center gap-2 transform hover:scale-105 hover:shadow-lg">
+
+          <img src="/ico/stacks.svg" alt="logo" class="w-12 h-12">
           <div
             class="text-white font-bold text-xl sm:text-2xl transition transform hover:scale-105 hover:shadow-lg"
           >
@@ -74,6 +76,7 @@
       </div>
     </header>
 
+    <!-- main -->
     <section
       id="main"
       class="relative min-h-screen bg-black bg-[url('img/land-cruiser.png')] bg-cover bg-center flex items-center justify-center text-white"
@@ -89,12 +92,13 @@
         </p>
         <a
           href="#form"
-          class="inline-block mt-8 px-8 py-4 text-2xl border border-white rounded-2xl hover:bg-green-800 transition transform hover:scale-105  hover:shadow-lg"
+          class="inline-block mt-8 px-8 py-4 text-2xl border border-white rounded-2xl hover:bg-green-800 transition transform hover:scale-105 hover:shadow-lg"
           >Залишити заявку</a
         >
       </div>
     </section>
 
+    <!-- about -->
     <section
       id="about"
       class="relative min-h-screen bg-black bg-[url('img/lexus570.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
@@ -132,6 +136,7 @@
       </div>
     </section>
 
+    <!-- autopark -->
     <section
       id="cars"
       class="relative bg-black bg-[url('img/vito.png')] bg-cover bg-center py-24 px-4 min-h-screen flex items-center justify-center"
@@ -178,7 +183,7 @@
               MB S-Class W221 — ділова елегантність і тиша в салоні
             </a>
             <button
-              onclick="openRentModal('GL500')"
+              onclick="openRentModal('W221')"
               class="mt-4 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800"
             >
               Розрахувати оренду
@@ -200,7 +205,7 @@
               Lexus LX570 — безпечна класика на складних маршрутах
             </a>
             <button
-              onclick="openRentModal('GL500')"
+              onclick="openRentModal('LX570')"
               class="mt-4 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800"
             >
               Розрахувати оренду
@@ -222,7 +227,7 @@
               Toyota Land Cruiser — техніка, якій довіряють професіонали
             </a>
             <button
-              onclick="openRentModal('GL500')"
+              onclick="openRentModal('LC300')"
               class="mt-4 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800"
             >
               Розрахувати оренду
@@ -232,6 +237,7 @@
       </div>
     </section>
 
+    <!-- tranfers -->
     <section
       id="transfers"
       class="relative min-h-screen bg-black bg-[url('img/banan.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
@@ -276,7 +282,7 @@
         >
       </div>
     </section>
-
+    <!-- form/order -->
     <section
       id="form"
       class="relative min-h-screen bg-black bg-[url('img/223.png')] bg-cover bg-center flex items-center justify-center py-24 px-4"
@@ -327,6 +333,7 @@
       </div>
     </section>
 
+    <!-- footer -->
     <footer
       class="bg-gray-900 text-gray-400 border-t border-gray-800 py-5 mt-12 text-center text-sm"
     >
@@ -341,10 +348,13 @@
             besafe.ukraine@gmail.com
           </a>
           <span class="hidden sm:inline">|</span>
-          <span class="flex items-center gap-1">
-            <img src="ico/telefon.svg" alt="telefon" class="w-4 h-4" /> +38 0
-            (96) 039 67 70
-          </span>
+          <a
+            href="tel:+380960396770"
+            class="flex items-center gap-1 text-gray-500 hover:text-white transition"
+          >
+            <img src="ico/telefon.svg" alt="telefon" class="w-4 h-4" />
+            +38 (096) 039 67 70
+          </a>
         </p>
       </div>
     </footer>
@@ -389,8 +399,9 @@
     <!-- Калькулятор аренды (модалка) -->
     <div
       id="rentModal"
-      class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center">
+      class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center"
     >
+      >
       <div
         class="bg-white text-black rounded-2xl shadow-2xl max-w-md w-full p-6 relative"
       >
@@ -448,7 +459,7 @@
         ></div>
       </div>
     </div>
-
+    <!-- скрипты -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.js"></script>
     <script src="js/map.js"></script>
     <script src="js/script.js"></script>

@@ -82,7 +82,7 @@ carouselInner.addEventListener('touchend', () => {
   isSwiping = false;
 });
 
-// тарифы по каждому авто
+// калькулятор, тарифы по каждому авто
 
 const rates = {
   GL500:   { day: 1000, hour: 150 },
